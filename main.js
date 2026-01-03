@@ -43,6 +43,8 @@ expenseForm.addEventListener("submit", (event) => {
   }
 
   alert.classList.add("hidden");
+  remainig -= amount;
+  remainingBudget.innerHTML = remainig;
 
   let displayDiv = document.createElement("div");
   displayDiv.innerHTML = `
