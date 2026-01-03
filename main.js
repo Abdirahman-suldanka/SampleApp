@@ -30,6 +30,7 @@ budgetForm.addEventListener("submit", (event) => {
 
   saveToLocal();
   budgetInput.value = "";
+  expenseList.innerHTML = "";
 });
 
 expenseForm.addEventListener("submit", (event) => {
