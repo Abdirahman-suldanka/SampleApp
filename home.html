@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BudgetApp – Smart Budget Control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+
+<!-- NAVBAR -->
+<header class="bg-white dark:bg-gray-800 shadow-sm transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="flex justify-between items-center flex-wrap gap-4">
+      <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400">💰 BudgetApp</h1>
+      <div class="flex gap-4 flex-wrap items-center">
+        <a href="home.html" class="text-blue-600 dark:text-blue-400 font-semibold">Home</a>
+        <a href="index.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Budget App</a>
+        <a href="about.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">About Me</a>
+        <a href="contact.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Contact Us</a>
+        <button id="darkModeToggle" class="ml-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+          <span id="darkModeIcon">🌙</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
+  
+  <div class="animate-fade-in">
+    <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+      Control Your Money.<br>
+      <span class="text-blue-600 dark:text-blue-400">Control Your Future.</span>
+    </h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg">
+      BudgetApp helps you plan your monthly budget, track expenses,
+      and avoid overspending — all in one simple dashboard. Join thousands of users who are taking control of their finances today!
+    </p>
+
+    <div class="flex gap-4 flex-wrap mb-6">
+      <a href="index.html"
+         class="bg-blue-600 dark:bg-blue-500 text-white px-7 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition transform hover:scale-105">
+        Get Started Free
+      </a>
+      <a href="#features"
+         class="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-7 py-3 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition">
+        Learn More
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-4 mt-8">
+      <div class="text-center">
+        <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">10K+</div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">Active Users</div>
+      </div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-green-600 dark:text-green-400">$2M+</div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">Tracked</div>
+      </div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">4.9★</div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="bg-blue-50 dark:bg-gray-800 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+    <img src="images/expense.avif"
+         alt="Budget App Illustration"
+         class="rounded-xl">
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="bg-white dark:bg-gray-800 py-20 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-4 dark:text-white">Why BudgetApp?</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-12 text-lg">Everything you need to manage your finances effectively</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-xl bg-blue-50 dark:bg-gray-700 hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="text-4xl mb-4">📊</div>
+        <h4 class="text-xl font-semibold mb-3 text-blue-600 dark:text-blue-400">Smart Tracking</h4>
+        <p class="text-gray-600 dark:text-gray-300">
+          Record every expense with detailed categories. Get insights into your spending patterns with visual analytics.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-xl bg-green-50 dark:bg-gray-700 hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="text-4xl mb-4">🛑</div>
+        <h4 class="text-xl font-semibold mb-3 text-green-600 dark:text-green-400">Budget Protection</h4>
+        <p class="text-gray-600 dark:text-gray-300">
+          Never exceed your monthly budget with real-time alerts and automatic limit enforcement.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-xl bg-purple-50 dark:bg-gray-700 hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="text-4xl mb-4">⚡</div>
+        <h4 class="text-xl font-semibold mb-3 text-purple-600 dark:text-purple-400">Simple & Fast</h4>
+        <p class="text-gray-600 dark:text-gray-300">
+          No accounts required. No complexity. Just pure budgeting power at your fingertips.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <img src="images/budget.avif"
+         alt="Expense Tracking"
+         class="rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+
+    <div>
+      <h3 class="text-3xl md:text-4xl font-bold mb-6 dark:text-white">How It Works</h3>
+
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
+          <div>
+            <h4 class="font-semibold text-lg mb-2 dark:text-white">Set Your Monthly Budget</h4>
+            <p class="text-gray-600 dark:text-gray-300">Enter your total monthly income or spending limit in seconds.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-green-600 dark:bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
+          <div>
+            <h4 class="font-semibold text-lg mb-2 dark:text-white">Add Expenses Instantly</h4>
+            <p class="text-gray-600 dark:text-gray-300">Track every purchase with a name and amount. See your balance update in real-time.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-purple-600 dark:bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
+          <div>
+            <h4 class="font-semibold text-lg mb-2 dark:text-white">Stay Within Limits</h4>
+            <p class="text-gray-600 dark:text-gray-300">Get instant warnings when you're approaching your budget limit.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-red-600 dark:bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
+          <div>
+            <h4 class="font-semibold text-lg mb-2 dark:text-white">Achieve Financial Goals</h4>
+            <p class="text-gray-600 dark:text-gray-300">Build better spending habits and save more money every month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 dark:text-white">What Users Say</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
+        <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">"This app changed how I manage money. So simple yet powerful!"</p>
+        <p class="font-semibold dark:text-white">- Sarah M.</p>
+      </div>
+      <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
+        <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">"Finally, a budget app that doesn't require a PhD to use!"</p>
+        <p class="font-semibold dark:text-white">- John D.</p>
+      </div>
+      <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
+        <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">"Saved me hundreds of dollars in the first month alone."</p>
+        <p class="font-semibold dark:text-white">- Emily R.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700 py-20 text-white text-center">
+  <h3 class="text-3xl md:text-4xl font-bold mb-6">
+    Start Budgeting Smarter Today
+  </h3>
+  <p class="mb-8 text-blue-100 text-lg max-w-2xl mx-auto">
+    Join thousands of users who are taking control of their finances. A simple habit that leads to financial freedom.
+  </p>
+  <a href="index.html"
+     class="inline-block bg-white text-blue-600 px-9 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+    Launch Budget App →
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 dark:bg-black text-gray-400 py-6 text-center transition-colors duration-300">
+  © 2026 BudgetApp · Designed with ❤️ using Tailwind CSS
+</footer>
+
+<!-- Dark Mode Script -->
+<script>
+  // Dark mode functionality
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const darkModeIcon = document.getElementById('darkModeIcon');
+  const html = document.documentElement;
+
+  // Check for saved theme preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'dark') {
+    html.classList.add('dark');
+    darkModeIcon.textContent = '☀️';
+  }
+
+  darkModeToggle.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    const isDark = html.classList.contains('dark');
+    darkModeIcon.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
+</body>
+</html>
